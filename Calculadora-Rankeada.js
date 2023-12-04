@@ -1,10 +1,10 @@
-function Partida(Vitorias, Derrotas) {
+function Partidas(Vitorias, Derrotas) {
     let result = Vitorias - Derrotas
     return result
   }
   
   function classificacao() {
-    let resultClass = partida(47, 15)
+    let resultClass = Partidas(102, 35)
     let nivel = ""
     if (resultClass <= 10) {
       nivel = "Ferro"
@@ -21,7 +21,7 @@ function Partida(Vitorias, Derrotas) {
     } else if (resultClass >= 100) {
       nivel = "Imortal"
     }
-    return "O Herói tem de saldo de ${resultClass} e está no nível de ${nivel}"
+    return `O Herói tem de saldo de ${resultClass} e está no nível de ${nivel}`
   }
   
   console.log(classificacao())
